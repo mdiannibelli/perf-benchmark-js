@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Test your Javascript Code!</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <main class="main-container">
+        <h1>¡Test your Javascript code!</h1>
+        <div class="container">
+            <div class="content">
+                <h2>Global</h2>
+                <textarea id="global-code" class="globalcode" rows="1">const data = [...Array(1000).keys()]</textarea>
+
+                <h2>Test cases</h2>
+                <div class="test-cases">
+                    <article class="test-case">
+                        <header>
+                            <span class="test-id">1</span>
+                            <span class="test-ops">16.454.071 ops/s</span>
+                        </header>
+                        <textarea class="code" rows="1">data.find(x => x == 100)</textarea>
+                    </article>
+                    <article class="test-case">
+                        <header>
+                            <span class="test-id">2</span>
+                            <span class="test-ops">16.454.071 ops/s</span>
+                        </header>
+                        <textarea class="code" rows="1">data.find(x => x == 200)</textarea>
+                    </article>
+                    <article class="test-case">
+                        <header>
+                            <span class="test-id">3</span>
+                            <span class="test-ops">16.454.071 ops/s</span>
+                        </header>
+                        <textarea class="code" rows="1">data.find(x => x == 800)</textarea>
+                    </article>
+                    <article class="test-case">
+                        <header>
+                            <span class="test-id">4</span>
+                            <span class="test-ops">16.454.071 ops/s</span>
+                        </header>
+                        <textarea class="code" rows="1">data.find(x => x == 800)</textarea>
+                    </article>
+                </div>
+                <button class="send-button">Benchmark Code! 🚀</button>
+            </div>
+            <div class="chart-container">
+                <svg class="chart" viewBox="0 0 200 300">
+                    <rect class="bar" x="20" y="-300" width="2" fill="green"></rect>
+                    <rect class="bar" x="70" y="-300" width="2" fill="yellow"></rect>
+                    <rect class="bar" x="120" y="-300" width="2" fill="orange"></rect>
+                    <rect class="bar" x="170" y="-300" width="2" fill="red"></rect>
+                </svg>
+                <div class="percentages">
+                    <span class="percentage"></span>
+                    <span class="percentage"></span>
+                    <span class="percentage"></span>
+                    <span class="percentage"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>

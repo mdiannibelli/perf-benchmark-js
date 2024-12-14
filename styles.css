@@ -1,0 +1,150 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1e1e;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
+.main-container h1 {
+    margin: 24px 0 32px 0px;
+    color: white;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.container .content {
+    display: flex;
+    flex-direction: column;
+    gap: 16x;
+}
+
+.container .content h2 {
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 8px;
+    margin-top: 24px;
+    opacity: 0.4;
+}
+
+.container .content .globalcode {
+    background-color: #141414;
+    user-select: none;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    resize: none;
+    field-sizing: content;
+}
+
+.test-cases {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.test-cases .test-case {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: #2a2a2a;
+}
+
+.test-cases .test-case header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    font-size: 12px;
+}
+
+.test-cases .test-case header .test-id {
+    border-radius: 50%;
+    color: white;
+    background-color: #141414;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-cases .test-case header .test-ops {
+    color: white;
+    opacity: 0.5;
+    font-size: 9px;
+}
+
+.test-cases .test-case .code {
+    border: 0;
+    background-color: #141414;
+    width: 100%;
+    font-size: 12px;
+    color: white;
+    padding: 8px;
+    field-sizing: content;
+    resize: none;
+}
+
+.send-button {
+    color: white;
+    background-color: gray;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 12px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(194, 159, 2);
+        transition-duration: 500ms;
+    }
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
+
+    .chart {
+        width: 200px;
+        height: 300px;
+    }
+
+    .bar {
+        transform: scale(1, -1);
+        transform: height .3s ease;
+    }
+
+    .percentages {
+        opacity: .5;
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        margin-top: 16px;
+        color: white;
+    }
+}
